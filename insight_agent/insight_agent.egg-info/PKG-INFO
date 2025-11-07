@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: insight-agent
+Version: 0.1.0
+Summary: InsightAgent Engine - marketing insight orchestration using LangGraph and Pydantic.
+Author-email: InsightAgent <insight-agent@example.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: langgraph>=0.0.49
+Requires-Dist: pydantic>=2.6
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=1.26
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn[standard]>=0.29
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: tenacity>=8.2
+Requires-Dist: rich>=13.7
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23; extra == "dev"
+
+# InsightAgent Engine
+
+InsightAgent is a headless Python engine that transforms raw paid media performance exports into actionable optimization guidance. The engine is designed for embedding inside other applications or deploying as a microservice.
+
+## Highlights
+
+- **Semantic column detection** – flexible resolution of differently named data exports (e.g. `ad_name` vs `Ad name`).
+- **Agentic orchestration** – a LangGraph-powered workflow coordinates specialist analysis agents for ROAS, CTR, conversion funnels, and fatigue detection.
+- **Schema-first contracts** – Pydantic v2 models enforce structured IO for deterministic downstream consumption.
+- **LLM-pluggable** – use OpenAI-compatible chat models via a lightweight adapter layer or provide a mock model for deterministic testing.
+- **Docker-ready** – packaged FastAPI app exposes the engine as a REST service.
+
+## Quick Start
+
+```bash
+cd insight_agent
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .[dev]
+pytest
+uvicorn insight_agent.server.api:app --reload
+```
+
+## License
+
+MIT

@@ -1,0 +1,34 @@
+[project]
+name = "insight-agent"
+version = "0.1.0"
+description = "InsightAgent Engine - marketing insight orchestration using LangGraph and Pydantic."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "InsightAgent", email = "insight-agent@example.com" }
+]
+dependencies = [
+  "langgraph>=0.0.49",
+  "pydantic>=2.6",
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.29",
+  "python-dotenv>=1.0",
+  "tenacity>=8.2",
+  "rich>=13.7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23"
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

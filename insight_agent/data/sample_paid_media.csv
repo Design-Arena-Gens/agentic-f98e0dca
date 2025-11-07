@@ -1,0 +1,7 @@
+Campaign name,Ad set name,Ad name,Ad ID,Spend,Impressions,Clicks,CTR %,Frequency,ROAS,Purchases,Purchase value,Adds to cart,CTR 7d %,CTR prev7 %,Status
+Spring Launch,Lookalike 1,Hook V1,12345,250,45000,900,2.0,2.5,0.9,8,2250,40,2.1,2.5,Active
+Spring Launch,Lookalike 1,Hook V2,12346,300,48000,960,2.0,2.7,1.1,5,1500,38,2.0,2.8,Active
+Evergreen,Retargeting,Carousel Test,22345,120,15000,450,3.0,3.8,1.5,9,1800,35,3.1,4.1,Active
+Summer Warmup,Interest 1,UGC V4,32345,500,90000,900,1.0,4.5,0.8,3,900,42,1.1,1.6,Active
+Summer Warmup,Interest 1,UGC V5,32346,520,88000,950,1.1,4.6,0.7,2,600,39,1.0,1.8,Paused
+Evergreen,Retargeting,Carousel Winner,22346,80,12000,420,3.5,3.9,1.9,12,2400,36,3.7,4.5,Active
